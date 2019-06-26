@@ -1,0 +1,30 @@
+﻿<Window x:Class="ALertMe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:dd="clr-namespace:ALertMe"
+        mc:Ignorable="d"
+        Title="Alert" Height="191" Width="263.984" Background="#FF6C8BD4"
+         >
+    <!--   -->
+    <Grid HorizontalAlignment="Left"  Margin="1,0,-1,6" LayoutUpdated="Grid_LayoutUpdated" RenderTransformOrigin="0.503,0.53" Width="258" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="23*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="hour_box" Content="HH" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="30" Margin="0,15,0,0" Grid.ColumnSpan="2"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="15,15,0,0" VerticalAlignment="Top" FontSize="30" Grid.Column="1"/>
+        <Label x:Name ="mintues_box" Content="MM" HorizontalAlignment="Left" Margin="30,16,0,0" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="30" Grid.Column="1" Grid.ColumnSpan="2" />
+        <Label Content=":" HorizontalAlignment="Left" Margin="83,15,0,0" VerticalAlignment="Top"  FontSize="30" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label x:Name="seconds_box" Content="SS" HorizontalAlignment="Left" Margin="4,17,0,0" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="30" Grid.Column="2" />
+        <ComboBox x:Name="hourscombo" HorizontalAlignment="Left" Margin="5,73,0,0" VerticalAlignment="Top" Width="50" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="minutescomb" HorizontalAlignment="Left" Margin="33,73,0,0" VerticalAlignment="Top" Width="55" Grid.Column="1"/>
+        <Label Content="HH" HorizontalAlignment="Left" Margin="17,91,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button x:Name="btn" Content="Set" HorizontalAlignment="Left" Margin="55,125,0,0" VerticalAlignment="Top" Width="68" Grid.Column="2"  Click="Btn_Click"/>
+        <Label Content="MM" HorizontalAlignment="Left" Margin="36,90,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox x:Name="aktive" Content="Active" Grid.Column="2" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Label Name="lb" Content="" HorizontalAlignment="Left" Margin="15,120,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="100"/>
+    </Grid>
+</Window>
